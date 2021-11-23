@@ -1,0 +1,30 @@
+<h1>Donation Details</h1>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">PhoneNumber</th>
+            <th scope="col">Country</th>
+            <th scope="col">State</th>
+            <th scope="col">City</th>
+            <th scope="col">PIN code</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+        <tr>
+            <td>{{this.Fname}}.{{this.Lname}}</td>
+            <td>{{this.Email}}</td>
+            <td>{{this.PhoneNumber}}</td>
+            <td>{{this.Country}}</td>
+            <td>{{this.State}}</td>
+            <td>{{this.City}}</td>
+            <td>{{this.PINcode}}</td>
+
+        </tr>
+        {{/each}}
+
+    </tbody>
+</table>
